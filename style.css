@@ -70,25 +70,7 @@ margin-bottom: 30px;
 .banner img{
    width: 100%;
 }
-/* responsive media queries*/
-/*for mobile devices*/
-@media screen and (max-width:576px) {
-    .nav-bar{
-        flex-direction: column;
-    }
-    .header{
-        padding: 20px;
-    }
-}
- /*for medium devices or tablet*/
- @media screen and (min-width:576px) and (max-width:992px) {
-    nav {
-        flex-direction: column;
-    }
-    .header{
-        padding: 20px;
-    }
- }
+
  /*header finished*/
 
 
@@ -138,3 +120,26 @@ margin-bottom: 25px;
  }
  /*featured part finishd*/
  
+/* responsive media queries*/
+/*for mobile devices*/
+@media screen and (max-width:576px) {
+    .nav-bar, .teams-container{
+        flex-direction: column;
+    }
+    .header{
+        padding: 20px;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    
+}
+ /*for medium devices or tablet*/
+ @media screen and (min-width:576px) and (max-width:992px) {
+    nav, .teams-container {
+        flex-direction: column;
+    }
+    .header{
+        padding: 20px;
+    }
+ }
